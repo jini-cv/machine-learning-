@@ -1,19 +1,19 @@
-# =========================================
+
 # MACHINE LEARNING PRACTICE IN R
 # Uncomment ONE section at a time
-# =========================================
 
 
-# -----------------------------------------
+
+
 # 1. Load dataset
-# -----------------------------------------
+
 # data <- mtcars
 # print(head(data))
 
 
-# -----------------------------------------
+
 # 2. Explore dataset
-# -----------------------------------------
+
 # data <- mtcars
 #
 # print(summary(data))
@@ -21,16 +21,16 @@
 # print(colnames(data))
 
 
-# -----------------------------------------
+
 # 3. Check missing values
-# -----------------------------------------
+
 # data <- mtcars
 # print(colSums(is.na(data)))
 
 
-# -----------------------------------------
+
 # 4. Train test split
-# -----------------------------------------
+
 # set.seed(123)
 # data <- mtcars
 #
@@ -43,17 +43,17 @@
 # print(nrow(test))
 
 
-# -----------------------------------------
+
 # 5. Linear Regression
-# -----------------------------------------
+
 # model <- lm(mpg ~ wt + hp, data=mtcars)
 #
 # print(summary(model))
 
 
-# -----------------------------------------
+
 # 6. Predict values
-# -----------------------------------------
+
 # model <- lm(mpg ~ wt + hp, data=mtcars)
 #
 # predictions <- predict(model, mtcars)
@@ -61,9 +61,9 @@
 # print(head(predictions))
 
 
-# -----------------------------------------
+
 # 7. Model evaluation (RMSE)
-# -----------------------------------------
+
 # model <- lm(mpg ~ wt + hp, data=mtcars)
 #
 # pred <- predict(model, mtcars)
@@ -73,9 +73,9 @@
 # print(rmse)
 
 
-# -----------------------------------------
+
 # 8. Logistic regression
-# -----------------------------------------
+
 # data <- mtcars
 # data$am <- as.factor(data$am)
 #
@@ -84,9 +84,9 @@
 # print(summary(model))
 
 
-# -----------------------------------------
+
 # 9. Decision Tree
-# -----------------------------------------
+
 # library(rpart)
 #
 # data <- mtcars
@@ -97,9 +97,9 @@
 # print(tree)
 
 
-# -----------------------------------------
+
 # 10. Plot decision tree
-# -----------------------------------------
+
 # library(rpart)
 # library(rpart.plot)
 #
@@ -111,9 +111,9 @@
 # rpart.plot(tree)
 
 
-# -----------------------------------------
+
 # 11. Random Forest
-# -----------------------------------------
+
 # library(randomForest)
 #
 # data <- mtcars
@@ -124,9 +124,9 @@
 # print(rf)
 
 
-# -----------------------------------------
+
 # 12. Feature importance
-# -----------------------------------------
+
 # library(randomForest)
 #
 # data <- mtcars
@@ -137,9 +137,9 @@
 # importance(rf)
 
 
-# -----------------------------------------
+
 # 13. Confusion matrix
-# -----------------------------------------
+
 # library(caret)
 #
 # data <- mtcars
@@ -154,9 +154,9 @@
 # confusionMatrix(as.factor(pred), data$am)
 
 
-# -----------------------------------------
+
 # 14. K-means clustering
-# -----------------------------------------
+
 # data <- mtcars[,c("mpg","wt","hp")]
 #
 # clusters <- kmeans(data,3)
@@ -164,9 +164,9 @@
 # print(clusters)
 
 
-# -----------------------------------------
+
 # 15. Cluster visualization
-# -----------------------------------------
+
 # data <- mtcars[,c("mpg","wt")]
 #
 # clusters <- kmeans(data,3)
